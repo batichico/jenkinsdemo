@@ -1,5 +1,4 @@
 
-def mydate = new Date(system.currentTime())
 pipeline
 {
     agent any
