@@ -1,4 +1,4 @@
-def mydate = new Date(system.currentTime())
+def now = new Date()
 pipeline
 {
     agent any
@@ -18,7 +18,7 @@ pipeline
                 {
                     def sumar = numero1.toInteger() + numero2.toInteger()
                     println "La suma de los dos numeros es: " + sumar
-                    println mydate
+                    println now
                 }
                 
             }
