@@ -1,6 +1,5 @@
 def now = new Date()
-today = now.getDay()
-numberDay = today.getDay()
+def today = now.getDay()
 pipeline
 {
     agent any
@@ -21,7 +20,6 @@ pipeline
                     def sumar = numero1.toInteger() + numero2.toInteger()
                     println "La suma de los dos numeros es: " + sumar
                     println today
-                    println numberDay
                 }
                 
             }
