@@ -1,11 +1,15 @@
-
 pipeline
 {
     agent any
     environment
+    {
+         numero1 = 100
+         numero2= 100
+    }
     stages
     {
-        stage("comparar")
+        
+        stage("Sumar")
         {
             steps
             {
@@ -13,9 +17,10 @@ pipeline
                 {
                     def sumar = numero1.toInteger() + numero2.toInteger()
                     println "La suma de los dos numeros es: " + sumar
-                    println mydate
                 }
+                
             }
-        } 
+            
+        }
     }
 }
