@@ -1,6 +1,7 @@
 def now = new Date()
 def today = now.format('YYYY-MM-dd')
 def mydate = new Date(system.currentTime())
+Calendar date = Calendar.getInstance();
 def clima = 18
 pipeline
 {
@@ -20,6 +21,7 @@ pipeline
                     if(mydate == 2)
                     {
                         println "Hoy es martes"
+                        println "El usuario es " + env.USERNAME
                     }
                     if(mydate == 3)
                     {
