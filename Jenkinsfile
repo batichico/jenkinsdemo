@@ -1,5 +1,6 @@
 def now = new Date()
 def today = now.getDay()
+def clima = 17
 pipeline
 {
     agent any
