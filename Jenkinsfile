@@ -24,12 +24,12 @@ pipeline
                     {
                         println "Hoy es lunes"
                     }
-                    if(today == 2)
+                    if(today == 3)
                     {
                         println "Hoy es martes"
                         println "El usuario es " + env.USERNAME
                     }
-                    if(today == 3)
+                    if(today == 2)
                     {
                         println "Hoy es miércoles"
                         println "Actualmente en Getafe hacen " + clima + "º"
